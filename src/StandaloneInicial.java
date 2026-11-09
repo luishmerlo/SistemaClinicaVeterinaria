@@ -1,30 +1,3 @@
-/*
-===== JUSTIFICATIVA DO ESCOPO =====
-
-Nesse standalone inicial, eu optei pra fazer um menu simples com opções que simulem funcionalidades que
-serão aplicadas posteriormente ao sistema. As opções 1 e 2 correspondem aos requisitos funcionais RF02
-e RF03 (O sistema deve permitir que recepcionistas cadastrem animais / veterinários). Já a opção 3
-corresponde à regra de negócio RN01 (As consultas duram 30 minutos e só podem ser marcadas de segunda a
-sexta, das 8h às 18h).
-
-Além de criar um menu, utilizar estruturas condicionais e laços de repetição como switch...case e do...while,
-eu optei por fazer algumas validações para deixar o standalone mais real, como a dos nomes de espécies,
-a da idade do animal, além das validações da opção 3.
-
-Com relação à regra de negócio RN01, eu interpretei que as consultas podem ser marcadas de 8h às 18h,
-de meia em meia hora, começando no horário das 8h00. Dessa forma, o último horário disponível para
-agendamento é o das 18h00. Além disso, na simulação de validação do dia da consulta (opção 3), considerei
-1 como Domingo, 2 como Segunda-feira, e assim por diante.
-
-O que ficou fora do escopo do TP1: como ainda não há armazenamento de dados, deixei para as próximas entregas
-a autenticação e os perfis (RF01), o agendamento real de consultas (RF04), o conflito de horários (RN02),
-a validação de datas passadas (RN03), o cancelamento e a marcação de consultas como realizadas (RN04 e RN05),
-as notas de observação pelos veterinários (RF11), além da visualização das consultas (RF12). Por isso,
-a opção 3 apenas valida o horário, sem agendar nada, e os cadastros apenas mostram os dados informados,
-sem armazená-los de fato.
-
-*/
-
 import java.util.Scanner;
 
 public class StandaloneInicial {
